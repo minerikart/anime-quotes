@@ -1,0 +1,71 @@
+is_global = true
+build_property.TargetFramework = net7.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AnimeQuotes
+build_property.ProjectDir = C:\Users\miner\Desktop\AnimeQuotes\
+
+[C:/Users/miner/Desktop/AnimeQuotes/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AnimeQuotes.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/miner/Desktop/AnimeQuotes/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AnimeQuotes.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/miner/Desktop/AnimeQuotes/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AnimeQuotes.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/miner/Desktop/AnimeQuotes/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AnimeQuotes.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/miner/Desktop/AnimeQuotes/Views/AvailableCharactersToChoosePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AnimeQuotes.Views.AvailableCharactersToChoosePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AvailableCharactersToChoosePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AvailableCharactersToChoosePage.xaml
+
+[C:/Users/miner/Desktop/AnimeQuotes/Views/AvailableOptionsToChoosePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AnimeQuotes.Views.AvailableOptionsToChoosePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AvailableOptionsToChoosePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AvailableOptionsToChoosePage.xaml
+
+[C:/Users/miner/Desktop/AnimeQuotes/Views/RandomQuotesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AnimeQuotes.Views.RandomQuotesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RandomQuotesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RandomQuotesPage.xaml
+
+[C:/Users/miner/Desktop/AnimeQuotes/Views/SearchCharactersQuotesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AnimeQuotes.Views.SearchCharactersQuotesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SearchCharactersQuotesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SearchCharactersQuotesPage.xaml
+
+[C:/Users/miner/Desktop/AnimeQuotes/Views/SearchQuotesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AnimeQuotes.Views.SearchQuotesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SearchQuotesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SearchQuotesPage.xaml
+
+[C:/Users/miner/Desktop/AnimeQuotes/Views/ViewCharacterQuotesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AnimeQuotes.Views.ViewCharacterQuotesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ViewCharacterQuotesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ViewCharacterQuotesPage.xaml

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnimeQuotes.Views.SearchQuotesPage"
+             xmlns:viewmodel="clr-namespace:AnimeQuotes.ViewModels"
+             x:DataType="viewmodel:SearchQuotesViewModel"
+             Title="SearchQuotesPage"
+             xmlns:model="clr-namespace:AnimeQuotes.Models"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="Beige">
+
+    <!-- Idea: Link de controlview a services-->
+    
+    <Grid RowDefinitions=".1*, *, .1*"
+          RowSpacing="0">
+
+        <Entry Text="{Binding Name}"
+               Placeholder="Write the anime you want to get quotes from!"
+               VerticalOptions="StartAndExpand"
+               Grid.Row="0"
+               BackgroundColor="White"/>
+
+
+        <ContentView Grid.Row="1">
+        <CollectionView ItemsSource="{Binding TenQuotes}">
+            <CollectionView.EmptyView>
+                <StackLayout>
+                    <Label Text="No quotes yet!"
+                           HorizontalOptions="Center"/>
+                </StackLayout>
+            </CollectionView.EmptyView>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:QuoteModel">
+                    <Frame WidthRequest="350" Margin="10">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Character}"
+                                   FontSize="Micro"/>
+                            <Label Text="{Binding Anime}"
+                                   FontAttributes="Italic"
+                                   FontSize="Caption"/>
+                            <BoxView HeightRequest="1"
+                                     Color="OrangeRed"
+                                     />
+                            <Label Text="{Binding Quote}"
+                                       VerticalOptions="Fill"
+                                       HorizontalOptions="Fill"/>
+                            </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        </ContentView>
+
+        <Button 
+                BackgroundColor="OrangeRed"
+                Margin="0"
+                Command="{Binding GetTenQuotesOfAnAnimeCommand}"
+                Text="Get Quotes" 
+                Grid.Row="2"/>
+    </Grid>
+
+</ContentPage>

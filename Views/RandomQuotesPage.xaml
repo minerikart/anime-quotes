@@ -1,0 +1,81 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:AnimeQuotes.ViewModels"
+             x:DataType="viewmodel:MainViewModel"
+             x:Class="AnimeQuotes.Views.RandomQuotesPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="Beige">
+
+    <ContentPage.Content>
+
+        <Grid RowDefinitions=".1*, .2*, .4*, .2*">
+
+            <Label Grid.Row="0"
+                   Text="{Binding AnimeQuotes.Anime}"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   FontAttributes="Italic"
+                   FontSize="Small"
+                   TextColor="DimGray"/>
+
+            <Label Grid.Row="1"
+                   Text="{Binding AnimeQuotes.Character}"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Large"
+                   TextDecorations="Underline"/>
+
+            <Frame Grid.Row="2"
+                   Padding="20"
+                   Margin="10"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   WidthRequest="360"
+                   IsClippedToBounds="True"
+                   x:Name="frame"
+                   IsVisible="false"
+                   >
+
+                <Frame.Triggers>
+                    <DataTrigger TargetType="Frame"
+                        Binding="{Binding Source={x:Reference quote}, 
+                        Path=Text.Length}"
+                        Value="0">
+                        <Setter Property="IsVisible" Value="False"/>
+                    </DataTrigger>
+                </Frame.Triggers>
+
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Frame.GestureRecognizers>
+
+                <ScrollView>
+                    <Label x:Name="quote"
+                       Text="{Binding AnimeQuotes.Quote}"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       LineBreakMode="WordWrap"
+                       FontSize="Small"
+                       >
+                    </Label>
+                </ScrollView>
+
+            </Frame>
+
+            <Button Grid.Row="3"
+                    Text="Get quote"
+                    Margin="0,50,0,0"
+                    FontSize="Small"
+                    BackgroundColor="OrangeRed"
+                    Command="{Binding GetQuotesCommand}"
+                    Clicked="Button_Clicked">
+
+            </Button>
+
+
+
+        </Grid>
+
+    </ContentPage.Content>
+
+</ContentPage>

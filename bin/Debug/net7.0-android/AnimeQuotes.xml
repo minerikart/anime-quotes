@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AnimeQuotes</name>
+    </assembly>
+    <members>
+        <member name="P:AnimeQuotes.ViewModels.AvailableCharactersToChooseViewModel.IsBusy">
+            <inheritdoc cref="F:AnimeQuotes.ViewModels.AvailableCharactersToChooseViewModel.isBusy"/>
+        </member>
+        <member name="F:AnimeQuotes.ViewModels.AvailableCharactersToChooseViewModel.getAvailableCharCommand">
+            <summary>The backing field for <see cref="P:AnimeQuotes.ViewModels.AvailableCharactersToChooseViewModel.GetAvailableCharCommand"/>.</summary>
+        </member>
+        <member name="P:AnimeQuotes.ViewModels.AvailableCharactersToChooseViewModel.GetAvailableCharCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AnimeQuotes.ViewModels.AvailableCharactersToChooseViewModel.GetAvailableChar"/>.</summary>
+        </member>
+        <member name="P:AnimeQuotes.ViewModels.AvailableOptionsToChooseViewModel.IsBusy">
+            <inheritdoc cref="F:AnimeQuotes.ViewModels.AvailableOptionsToChooseViewModel.isBusy"/>
+        </member>
+        <member name="F:AnimeQuotes.ViewModels.AvailableOptionsToChooseViewModel.getAvailableAnimesCommand">
+            <summary>The backing field for <see cref="P:AnimeQuotes.ViewModels.AvailableOptionsToChooseViewModel.GetAvailableAnimesCommand"/>.</summary>
+        </member>
+        <member name="P:AnimeQuotes.ViewModels.AvailableOptionsToChooseViewModel.GetAvailableAnimesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AnimeQuotes.ViewModels.AvailableOptionsToChooseViewModel.GetAvailableAnimes"/>.</summary>
+        </member>
+        <member name="P:AnimeQuotes.ViewModels.MainViewModel.AnimeQuotes">
+            <inheritdoc cref="F:AnimeQuotes.ViewModels.MainViewModel.animeQuotes"/>
+        </member>
+        <member name="F:AnimeQuotes.ViewModels.MainViewModel.getQuotesCommand">
+            <summary>The backing field for <see cref="P:AnimeQuotes.ViewModels.MainViewModel.GetQuotesCommand"/>.</summary>
+        </member>
+        <member name="P:AnimeQuotes.ViewModels.MainViewModel.GetQuotesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AnimeQuotes.ViewModels.MainViewModel.GetQuotes"/>.</summary>
+        </member>
+        <member name="P:AnimeQuotes.ViewModels.SearchCharactersQuotesViewModel.IsRefreshing">
+            <inheritdoc cref="F:AnimeQuotes.ViewModels.SearchCharactersQuotesViewModel.isRefreshing"/>
+        </member>
+        <member name="P:AnimeQuotes.ViewModels.SearchCharactersQuotesViewModel.CharName">
+            <inheritdoc cref="F:AnimeQuotes.ViewModels.SearchCharactersQuotesViewModel.charName"/>
+        </member>
+        <member name="F:AnimeQuotes.ViewModels.SearchCharactersQuotesViewModel.getTenQuotesOfACharCommand">
+            <summary>The backing field for <see cref="P:AnimeQuotes.ViewModels.SearchCharactersQuotesViewModel.GetTenQuotesOfACharCommand"/>.</summary>
+        </member>
+        <member name="P:AnimeQuotes.ViewModels.SearchCharactersQuotesViewModel.GetTenQuotesOfACharCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AnimeQuotes.ViewModels.SearchCharactersQuotesViewModel.GetTenQuotesOfAChar"/>.</summary>
+        </member>
+        <member name="P:AnimeQuotes.ViewModels.SearchQuotesViewModel.IsRefreshing">
+            <inheritdoc cref="F:AnimeQuotes.ViewModels.SearchQuotesViewModel.isRefreshing"/>
+        </member>
+        <member name="P:AnimeQuotes.ViewModels.SearchQuotesViewModel.Name">
+            <inheritdoc cref="F:AnimeQuotes.ViewModels.SearchQuotesViewModel.name"/>
+        </member>
+        <member name="F:AnimeQuotes.ViewModels.SearchQuotesViewModel.getTenQuotesOfAnAnimeCommand">
+            <summary>The backing field for <see cref="P:AnimeQuotes.ViewModels.SearchQuotesViewModel.GetTenQuotesOfAnAnimeCommand"/>.</summary>
+        </member>
+        <member name="P:AnimeQuotes.ViewModels.SearchQuotesViewModel.GetTenQuotesOfAnAnimeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AnimeQuotes.ViewModels.SearchQuotesViewModel.GetTenQuotesOfAnAnime"/>.</summary>
+        </member>
+    </members>
+</doc>

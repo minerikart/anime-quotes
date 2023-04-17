@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="AnimeQuotes.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:AnimeQuotes.Views"
+    Shell.FlyoutBehavior="Disabled">
+
+
+    <TabBar>
+
+        <Tab Title="Quotes">
+            <ShellContent ContentTemplate="{DataTemplate views:RandomQuotesPage}" />
+        </Tab>
+
+        <Tab Title="Search">
+            <ShellContent Title="Anime"
+                          ContentTemplate="{DataTemplate views:SearchQuotesPage}" />
+            <ShellContent Title="Character"
+                          ContentTemplate="{DataTemplate views:SearchCharactersQuotesPage}"/>
+        </Tab>
+        
+        <Tab Title="Animes">
+            
+            <ShellContent Title="Animes"
+                          ContentTemplate="{DataTemplate views:AvailableOptionsToChoosePage}"
+                          />
+            <ShellContent Title="Characters"
+                          ContentTemplate="{DataTemplate views:AvailableCharactersToChoosePage}"/>
+        </Tab>
+        
+        
+    </TabBar>
+
+</Shell>
